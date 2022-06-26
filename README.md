@@ -24,7 +24,23 @@ conda create --name <env> --file requirements.txt
 └── .gitignore
 ```
 After setting up dependencies, run [app.py](https://github.com/vhoangTS/bwb/blob/main/app.py) to test the code.
+You can modify values of `payload` body to test different scenarios.
 
+```python
+if __name__ == '__main__':
+    # Request body
+    payload = {
+        'username': 'vhoang',
+        'password': 'bar',
+        'keyword': 'bosch',
+        'nr_results': 10}
+
+    # Output as json
+    # r = to_json(response(payload))
+
+    # Output to file
+    to_json_file(response(payload))
+```
 
 ## Further notes
 ### `googlesearch` vs `google-api-python-client`? 
