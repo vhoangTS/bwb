@@ -62,7 +62,7 @@ Example of html data with `description` tag:
 <meta name="description" content="Moving stories and inspiring interviews. Experience the meaning of &#34;invented for life&#34; by Bosch completely new. Visit our international website."> 
 ```
 
-### Scenario 3: User found with `limited` access.
+### Scenario 3: User found with `full` access.
 The program returns a JSON with link and complete description of the website. Complete description means the program extract all the content wrapped in `description` tag in html data. Some website has shot description == complete description but not all.
 ```json
 {
