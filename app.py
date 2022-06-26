@@ -4,6 +4,12 @@ import json
 
 
 def response(request):
+    """
+    Authentication, authorization and search for google result based on request body.
+
+    :param request: Request body as dict.
+    :return: Response stored as dictionary.
+    """
     response = {
         'code': '',
         'permission': '',

@@ -28,6 +28,7 @@ def google_search(keyword='', nr_results=10, pause=2.0):
 def get_website_description(url='', get_all=True):
     """
     Perform google search based on specific keyword.
+
     :param url: String, website address.
     :param get_all: If True, get all available description from html text.
     :return: A string description of the webpage. If not available, return empty string.
@@ -49,6 +50,13 @@ def get_website_description(url='', get_all=True):
 
 
 def create_result_dict(urls, get_all=True):
+    """
+    Look into each link in list of URLs and extract description.
+
+    :param urls: List of URLs strings.
+    :param get_all: If True, get long description.
+    :return: A dictionary containing link:description.
+    """
     output = dict()
     for uid, url in enumerate(urls):
         data = {
