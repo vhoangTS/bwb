@@ -1,0 +1,48 @@
+﻿{
+    "code": "200: Sucessful authentication.",
+    "number-search-results": 10,
+    "permission": "limited",
+    "search-data": {
+        "search_result_0": {
+            "description": "Technik fürs Leben: Unsere Produkte begeistern Menschen, verbessern ihre Lebensqualität und tragen zur Schonung der natürlichen Ressourcen bei.",
+            "link": "https://www.bosch.de/"
+        },
+        "search_result_1": {
+            "description": "Aufgrund der hohen Innovationskraft begeistert Bosch mit überraschend einfachen Lösungen in ästhetisch-funktionalem Design.",
+            "link": "https://www.bosch.de/produkte-und-services/"
+        },
+        "search_result_2": {
+            "description": "Bosch bietet Ihnen individuelle Lösungen für Ihr Zuhause, um Ihr Leben jeden Tag ein wenig einfacher zu machen.",
+            "link": "https://www.bosch.de/produkte-und-services/zuhause/"
+        },
+        "search_result_3": {
+            "description": "Grow. Enjoy. Inspire. Work #LikeABosch. Lernen Sie unseren globalen Arbeitgeber kennen und finden Sie Jobs weltweit. Willkommen bei Bosch Karriere.",
+            "link": "https://www.bosch.de/karriere/"
+        },
+        "search_result_4": {
+            "description": "Für alle Anliegen wenden Sie sich bitte an unsere Kundenberatung oder das Bosch Service Center +49 (0)711 400 40990. Hier ist man 24 Stunden am Tag, sieben Tage die Woche für Sie da.",
+            "link": "https://www.bosch.de/kontakt/"
+        },
+        "search_result_5": {
+            "description": "Technik fürs Leben: Unsere Produkte begeistern Menschen, verbessern ihre Lebensqualität und tragen zur Schonung der natürlichen Ressourcen bei.",
+            "link": "http://www.bosch.de/"
+        },
+        "search_result_6": {
+            "description": "",
+            "link": "https://de.wikipedia.org/wiki/Datei:Bosch-logotype.svg"
+        },
+        "search_result_7": {
+            "description": "",
+            "link": "https://de.wikipedia.org/wiki/Robert_Bosch_GmbH"
+        },
+        "search_result_8": {
+            "description": "Moving stories and inspiring interviews. Experience the meaning of \"invented for life\" by Bosch completely new. Visit our international website.",
+            "link": "https://www.bosch.com/"
+        },
+        "search_result_9": {
+            "description": "Grow. Enjoy Inspire. Work #LikeABosch. Get to know our global employer and find jobs worldwide. Welcome to Bosch Careers.",
+            "link": "https://www.bosch.com/careers/"
+        }
+    },
+    "search-keyword": "bosch"
+}
