@@ -7,6 +7,7 @@ This is a temporary repo to store codes written for specific task during applica
 ```Console
 conda create --name <env> --file requirements.txt
 ```  
+- `flask`
 - `requests`  
 - `pandas`  
 - `googlesearch`
@@ -18,6 +19,7 @@ conda create --name <env> --file requirements.txt
 │   └── auth.py             # Authetication & authorization modules
 │   ├── search.py           # Google search
 │   └── database.pickle     # User credentials database
+├── server.py               # Flask server
 ├── app.py                  # Main application
 ├── reponse.json            # Reponse as JSON
 ├── requirements.txt        # Dependencies
@@ -27,19 +29,17 @@ After setting up dependencies, run [app.py](https://github.com/vhoangTS/bwb/blob
 You can modify values of `payload` body to test different scenarios.
 
 ```python
-if __name__ == '__main__':
     # Request body
     payload = {
-        'username': 'vhoang',
-        'password': 'bar',
+        'username': 'admin',
+        'password': 'foo',
         'keyword': 'bosch',
         'nr_results': 10}
 
-    # Output as json
-    # r = to_json(response(payload))
-
-    # Output to file
-    to_json_file(response(payload))
+    response = requests.post("http://127.0.0.1:5000/search-request",
+                             json=payload,
+                             headers={'Content-type': 'application/json',
+                                      'accept': 'application/json'})
 ```
 
 ## JSON Response
@@ -122,8 +122,10 @@ The program returns a JSON with link and complete description of the website. Co
 For example it would me much easier and more straight forward to extract further information (i.e. website name, description) on search results. 
 However it requires [API key](https://cloud.google.com/docs/authentication/api-keys). 
 
-### Search: Event handler
-Currently there are no even handler for the search module. This should be looked into in future steps.
+### TODO:
+- Store previous search results -> directly response if search has been done before, this reduces wait time when there is a search request, 
+- Search engine event handler: Currently there are no handler for the search module as it does not catch any potential issues.
+- Sign-in, Search page instead of sending payload?
 
 ### Implementiere eine Authentifizierungs-/Autorisierungsmechanismus? 
 As I have very limited knowledge in this topic, I just pretty much "winging it" with an assumption that the request body contain username/password and it is checked against a dummy user credentials database in order to identify: 1. if the user has access and 2. which access level? Based on this, the JSON reponse is different per each case.
