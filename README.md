@@ -8,6 +8,7 @@ This is a temporary repo to store codes written for specific task during applica
 conda create --name <env> --file requirements.txt
 ```  
 - `requests`  
+- `flask`  
 - `pandas`  
 - `googlesearch`
 
@@ -19,11 +20,12 @@ conda create --name <env> --file requirements.txt
 │   ├── search.py           # Google search
 │   └── database.pickle     # User credentials database
 ├── app.py                  # Main application
+├── server.py               # Flask server
 ├── reponse.json            # Reponse as JSON
 ├── requirements.txt        # Dependencies
 └── .gitignore
 ```
-After setting up dependencies, run [app.py](https://github.com/vhoangTS/bwb/blob/main/app.py) to test the code.
+After setting up dependencies, run [server.py](https://github.com/vhoangTS/bwb/blob/main/server.py) to boot Flask server and then [app.py](https://github.com/vhoangTS/bwb/blob/main/app.py) to get response with specific payload.
 
 
 ## Further notes
@@ -34,3 +36,7 @@ However it requires [API key](https://cloud.google.com/docs/authentication/api-k
 
 ### Implementiere eine Authentifizierungs-/Autorisierungsmechanismus? 
 As I have very limited knowledge in this topic, I just pretty much "winging it" with an assumption that the request body contain username/password and it is checked against a dummy user credentials database in order to identify: 1. if the user has access and 2. which access level? Based on this, the JSON reponse is different per each case.
+
+### TODO:
+- Store previous search to avoid having to search for every payloads
+- Sign-in, Search page
