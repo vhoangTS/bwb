@@ -25,7 +25,7 @@ conda create --name <env> --file requirements.txt
 ├── requirements.txt        # Dependencies
 └── .gitignore
 ```
-After setting up dependencies, run [app.py](https://github.com/vhoangTS/bwb/blob/main/app.py) to test the code.
+After setting up dependencies, start up [server.py](https://github.com/vhoangTS/bwb/blob/main/server.py) and run [app.py](https://github.com/vhoangTS/bwb/blob/main/app.py) to test the code.
 You can modify values of `payload` body to test different scenarios.
 
 ```python
